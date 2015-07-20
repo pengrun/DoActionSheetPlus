@@ -7,6 +7,7 @@
 
 #import "DoActionSheet.h"
 #import "UIImage+ResizeMagick.h"    //  Created by Vlad Andersen on 1/5/13.
+#import "UIImage+PR.h"
 
 #pragma mark - DoAlertViewController
 
@@ -145,15 +146,20 @@
 
     if (bCancel)
     {
-        bt.backgroundColor = (self.doCancelColor == nil) ? DO_AS_CANCEL_COLOR : self.doCancelColor;
+        //add click effect
+        UIImage *image = [UIImage imageWithColor:self.doCancelColor  size:bt.frame.size];
+        [bt setBackgroundImage:image forState:UIControlStateNormal];
         bt.titleLabel.font = (self.doCancelFont == nil) ? DO_AS_TITLE_FONT : self.doCancelFont;
         [bt setTitleColor:(self.doCancelTextColor == nil) ? DO_AS_CANCEL_TEXT_COLOR : self.doCancelTextColor forState:UIControlStateNormal];
+        [bt setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
     }
     else
     {
-        bt.backgroundColor = (self.doButtonColor == nil) ? DO_AS_BUTTON_COLOR : self.doButtonColor;
+        UIImage *image = [UIImage imageWithColor:(self.doButtonColor == nil) ? DO_AS_BUTTON_COLOR : self.doButtonColor size:bt.frame.size];
+        [bt setBackgroundImage:image forState:UIControlStateNormal];
         bt.titleLabel.font = (self.doButtonFont == nil) ? DO_AS_BUTTON_FONT : self.doButtonFont;
         [bt setTitleColor:(self.doButtonTextColor == nil) ? DO_AS_BUTTON_TEXT_COLOR : self.doButtonTextColor forState:UIControlStateNormal];
+        [bt setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
     }
 
     if (_dButtonRound > 0)
@@ -226,12 +232,12 @@
         bt.tag = nTagIndex;
         [bt setTitle:str forState:UIControlStateNormal];
         
-        [self setButtonAttributes:bt cancel:NO];
+        
         bt.frame = CGRectMake(self.doButtonInset.left, dYContent,
                               _vActionSheet.frame.size.width - (self.doButtonInset.left + self.doButtonInset.right), (self.doButtonHeight > 0) ? self.doButtonHeight : DO_AS_BUTTON_HEIGHT);
         
         dYContent += ((self.doButtonHeight > 0) ? self.doButtonHeight : DO_AS_BUTTON_HEIGHT) + self.doButtonInset.bottom;
-        
+        [self setButtonAttributes:bt cancel:NO];
         [sc addSubview:bt];
         
         if (nTagIndex == _nDestructiveIndex)
@@ -253,12 +259,12 @@
         bt.tag = DO_AS_CANCEL_TAG;
         [bt setTitle:_strCancel forState:UIControlStateNormal];
         
-        [self setButtonAttributes:bt cancel:YES];
+        
         bt.frame = CGRectMake(self.doButtonInset.left, dHeight + self.doButtonInset.top + self.doButtonInset.bottom,
                               _vActionSheet.frame.size.width - (self.doButtonInset.left + self.doButtonInset.right), (self.doButtonHeight > 0) ? self.doButtonHeight : DO_AS_BUTTON_HEIGHT);
         
         dHeight += ((self.doButtonHeight > 0) ? self.doButtonHeight : DO_AS_BUTTON_HEIGHT) + (self.doButtonInset.top + self.doButtonInset.bottom) * 2;
-        
+        [self setButtonAttributes:bt cancel:YES];
         [_vActionSheet addSubview:bt];
     }
     else
