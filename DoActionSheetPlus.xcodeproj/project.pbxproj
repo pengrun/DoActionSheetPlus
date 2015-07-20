@@ -27,6 +27,8 @@
 		F116EE691B5C90EA0049F1D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F116EE681B5C90EA0049F1D7 /* UIKit.framework */; };
 		F116EE6D1B5C9DD00049F1D7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F116EE6B1B5C9DD00049F1D7 /* README.md */; };
 		F116EE6E1B5C9DD00049F1D7 /* UIImage-PR.podspec in Resources */ = {isa = PBXBuildFile; fileRef = F116EE6C1B5C9DD00049F1D7 /* UIImage-PR.podspec */; };
+		F116EE731B5C9EFB0049F1D7 /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F116EE711B5C9EFB0049F1D7 /* pic1.jpg */; };
+		F116EE741B5C9EFB0049F1D7 /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F116EE721B5C9EFB0049F1D7 /* pic2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		F116EE6A1B5C91250049F1D7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F116EE6B1B5C9DD00049F1D7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F116EE6C1B5C9DD00049F1D7 /* UIImage-PR.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIImage-PR.podspec"; sourceTree = "<group>"; };
+		F116EE711B5C9EFB0049F1D7 /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpg; sourceTree = "<group>"; };
+		F116EE721B5C9EFB0049F1D7 /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				F116EE251B5C8EBA0049F1D7 /* AppDelegate.h */,
 				F116EE261B5C8EBA0049F1D7 /* AppDelegate.m */,
 				F116EE2E1B5C8EBA0049F1D7 /* Images.xcassets */,
+				F116EE6F1B5C9EFB0049F1D7 /* Resource */,
 				F116EE301B5C8EBA0049F1D7 /* LaunchScreen.xib */,
 				F116EE211B5C8EBA0049F1D7 /* Supporting Files */,
 			);
@@ -201,6 +206,23 @@
 				F116EE5D1B5C8F370049F1D7 /* UIImage+PR.m */,
 			);
 			path = "UIImage-PR";
+			sourceTree = "<group>";
+		};
+		F116EE6F1B5C9EFB0049F1D7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F116EE701B5C9EFB0049F1D7 /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F116EE701B5C9EFB0049F1D7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F116EE711B5C9EFB0049F1D7 /* pic1.jpg */,
+				F116EE721B5C9EFB0049F1D7 /* pic2.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +309,8 @@
 				F116EE541B5C8ED50049F1D7 /* .gitignore in Resources */,
 				F116EE581B5C8ED50049F1D7 /* UIImage-ResizeMagick.podspec in Resources */,
 				F116EE321B5C8EBA0049F1D7 /* LaunchScreen.xib in Resources */,
+				F116EE741B5C9EFB0049F1D7 /* pic2.jpg in Resources */,
+				F116EE731B5C9EFB0049F1D7 /* pic1.jpg in Resources */,
 				F116EE621B5C906A0049F1D7 /* Main.storyboard in Resources */,
 				F116EE2F1B5C8EBA0049F1D7 /* Images.xcassets in Resources */,
 				F116EE551B5C8ED50049F1D7 /* LICENSE in Resources */,
