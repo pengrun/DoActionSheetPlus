@@ -25,6 +25,8 @@
 		F116EE651B5C90C90049F1D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F116EE641B5C90C90049F1D7 /* CoreGraphics.framework */; };
 		F116EE671B5C90D60049F1D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F116EE661B5C90D60049F1D7 /* Foundation.framework */; };
 		F116EE691B5C90EA0049F1D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F116EE681B5C90EA0049F1D7 /* UIKit.framework */; };
+		F116EE6D1B5C9DD00049F1D7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F116EE6B1B5C9DD00049F1D7 /* README.md */; };
+		F116EE6E1B5C9DD00049F1D7 /* UIImage-PR.podspec in Resources */ = {isa = PBXBuildFile; fileRef = F116EE6C1B5C9DD00049F1D7 /* UIImage-PR.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		F116EE661B5C90D60049F1D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F116EE681B5C90EA0049F1D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F116EE6A1B5C91250049F1D7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F116EE6B1B5C9DD00049F1D7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F116EE6C1B5C9DD00049F1D7 /* UIImage-PR.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIImage-PR.podspec"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,8 @@
 		F116EE5B1B5C8F370049F1D7 /* UIImage-PR */ = {
 			isa = PBXGroup;
 			children = (
+				F116EE6B1B5C9DD00049F1D7 /* README.md */,
+				F116EE6C1B5C9DD00049F1D7 /* UIImage-PR.podspec */,
 				F116EE5C1B5C8F370049F1D7 /* UIImage+PR.h */,
 				F116EE5D1B5C8F370049F1D7 /* UIImage+PR.m */,
 			);
@@ -277,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F116EE6E1B5C9DD00049F1D7 /* UIImage-PR.podspec in Resources */,
 				F116EE541B5C8ED50049F1D7 /* .gitignore in Resources */,
 				F116EE581B5C8ED50049F1D7 /* UIImage-ResizeMagick.podspec in Resources */,
 				F116EE321B5C8EBA0049F1D7 /* LaunchScreen.xib in Resources */,
@@ -306,6 +313,7 @@
 				F116EE591B5C8ED50049F1D7 /* DoActionSheet.m in Sources */,
 				F116EE271B5C8EBA0049F1D7 /* AppDelegate.m in Sources */,
 				F116EE5E1B5C8F370049F1D7 /* UIImage+PR.m in Sources */,
+				F116EE6D1B5C9DD00049F1D7 /* README.md in Sources */,
 				F116EE561B5C8ED50049F1D7 /* README.md in Sources */,
 				F116EE241B5C8EBA0049F1D7 /* main.m in Sources */,
 			);
